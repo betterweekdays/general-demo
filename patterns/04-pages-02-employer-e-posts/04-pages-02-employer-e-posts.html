@@ -7,8 +7,8 @@
         <link rel="stylesheet" type="text/css" href="//centaurus.adbee.technology/css/bootstrap/bootstrap.min.css" />
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/libs/nanoscroller.css" />
-				<link rel="stylesheet" href="../../css/centaurus/centaurus.css?1490620242" media="all" />
-				<link rel="stylesheet" href="../../css/betterweekdays/betterweekdays.css?1490620242" media="all" />
+				<link rel="stylesheet" href="../../css/centaurus/centaurus.css?1498858729" media="all" />
+				<link rel="stylesheet" href="../../css/betterweekdays/betterweekdays.css?1498858729" media="all" />
 		        <link rel="stylesheet" type="text/css" href="../../css/libs/dataTables.fixedHeader.css">
 		        <link rel="stylesheet" type="text/css" href="../../css/libs/dataTables.tableTools.css">
 		        <link rel="stylesheet" type="text/css" href="../../css/libs/daterangepicker.css">
@@ -27,8 +27,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1490620242" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1490620242" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1498858729" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1498858729" media="all" />
 		
 
 			<!-- End Pattern Lab -->
@@ -62,7 +62,7 @@
                                     </a>
                             </li>
                             <li class="">
-                                    <a href="/patterns/04-pages-02-employer-e-student-playlist/04-pages-02-employer-e-student-playlist.html">
+                                    <a href="/patterns/04-pages-02-employer-e-candidates-suggested/04-pages-02-employer-e-candidates-suggested.html">
                                         <span>Candidates</span>
                                     </a>
                             </li>
@@ -83,6 +83,7 @@
                             </li>
                     </ul>
                     <ul class="nav navbar-nav pull-right">
+
                         <li class="dropdown">
                             <a href="#"><i class="fa fa-power-off"></i></a>
                         </li>
@@ -96,7 +97,7 @@
         <div class="row">
             <div id="content-wrapper">
                 <div class="row">
-                    <div class="col-md-10 col-md-offset-2">
+                    <div class="col-md-12">
 
                         <div class="row hidden-lg margin-bottom-16">
                             <div class="col-xs-4">
@@ -108,7 +109,12 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-12">
+                                <button type="button" id="open-wizard" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#step-modal">
+                                  Post
+                                  <span class="fa fa-thumb-tack"></span>
+                                </button>
+                                    <br/>
                                 <!-- Begin horrible hack to display graphs on this page. Do not replicate this! Not enough time to properly debug... -->
 
                                 <div class="graph" id="graph-line-1" style="display:none;">
@@ -227,7 +233,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a href="">What It's Like to Work at World Wide Technology</a>
+                                                    <td><a href="">What It's Like to Work at Amazon.com</a>
                                                     <br/><span class="small">07/22/15 9:09 AM</span></td>
                                                     <td>Article</td>
                                                     <td><a href="#">3 views / 0 faves</a></td>
@@ -247,7 +253,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a href="">World Wide Technology is a great place for Information Technology majors</a>
+                                                    <td><a href="">Amazon.com is a great place for English majors</a>
                                                     <br/><span class="small">07/22/15 9:11 AM</span></td>
                                                     <td>Article</td>
                                                     <td><a href="#">7 views / 2 faves</a></td>
@@ -330,7 +336,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a href="">What It's Like to Work at World Wide Technology</a>
+                                                    <td><a href="">What It's Like to Work at Amazon.com</a>
                                                         <br/><span class="small">07/22/15 9:09 AM</span></td>
                                                     <td>Article</td>
                                                     <td><a href="#">3 views / 0 faves</a></td>
@@ -353,20 +359,6 @@
                                         </div>
                                     </div>
                                 </div>                            </div>
-                            <div class="col-md-4">
-                                <div class="row">
-
-                                    <div class="col-xs-12">
-
-                                        <button type="button" id="open-wizard" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#step-modal">
-                                          Post
-                                          <span class="fa fa-thumb-tack"></span>
-                                        </button>
-
-                                    </div>
-
-                                </div>
-                            </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12 hidden">
@@ -500,7 +492,7 @@
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "pages-e-posts";
-		var lineage        = [{"lineagePattern":"organisms-employer-graphs","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-54-employer-graphs\/02-organisms-03-sections-54-employer-graphs.html"},{"lineagePattern":"organisms-post-content-list","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-55-post-content-list\/02-organisms-03-sections-55-post-content-list.html"},{"lineagePattern":"organisms-post-wizard-button","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-49-post-wizard-button\/02-organisms-03-sections-49-post-wizard-button.html"},{"lineagePattern":"molecules-morris-pie-chart","lineagePath":"..\/..\/patterns\/01-molecules-06-components-05-morris-pie-chart\/01-molecules-06-components-05-morris-pie-chart.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"},{"lineagePattern":"organisms-post-wizard-modal","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-48-post-wizard-modal\/02-organisms-03-sections-48-post-wizard-modal.html"}];
+		var lineage        = [{"lineagePattern":"organisms-post-wizard-button","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-49-post-wizard-button\/02-organisms-03-sections-49-post-wizard-button.html"},{"lineagePattern":"organisms-employer-graphs","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-54-employer-graphs\/02-organisms-03-sections-54-employer-graphs.html"},{"lineagePattern":"organisms-post-content-list","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-55-post-content-list\/02-organisms-03-sections-55-post-content-list.html"},{"lineagePattern":"molecules-morris-pie-chart","lineagePath":"..\/..\/patterns\/01-molecules-06-components-05-morris-pie-chart\/01-molecules-06-components-05-morris-pie-chart.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"},{"lineagePattern":"organisms-post-wizard-modal","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-48-post-wizard-modal\/02-organisms-03-sections-48-post-wizard-modal.html"}];
 		var lineageR       = [];
 		var patternState   = "";
 		var cssEnabled     = false;
@@ -537,10 +529,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1490620242">
+	<script id="pl-js-polyfill-insert-1498858729">
 		(function() {
 			if (self != top) {
-				var cb = '1490620242';
+				var cb = '1498858729';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -549,10 +541,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1490620242">
+	<script id="pl-js-insert-1498858729">
 		(function() {
 			if (self != top) {
-				var cb = '1490620242';
+				var cb = '1498858729';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
@@ -766,7 +758,7 @@ $('.nav li a').click(function(e) {
                 xLabelFormat: function(date) {
                     return (date.getMonth()+1)+'/'+date.getDate()+'/'+date.getFullYear();
                 },
-                labels: ['% of St. Louis Campus Students', '% of Information Technology Analyst Degree Program Students'],
+                labels: ['% of St. Louis Campus Students', '% of Medical Assistant Degree Program Students'],
                 lineColors: ['#0691F9','#F7941E'],
                 lineWidth: 2,
                 pointSize: 3,
@@ -794,7 +786,7 @@ $('.nav li a').click(function(e) {
                 xLabelFormat: function(date) {
                     return (date.getMonth()+1)+'/'+date.getDate()+'/'+date.getFullYear();
                 },
-                labels: ['%Δ of St. Louis Campus Students', '%Δ of Information Technology Analyst Degree Program Students'],
+                labels: ['%Δ of St. Louis Campus Students', '%Δ of Medical Assistant Degree Program Students'],
 
                 lineColors: ['#0691F9','#F7941E'],
                 lineWidth: 2,

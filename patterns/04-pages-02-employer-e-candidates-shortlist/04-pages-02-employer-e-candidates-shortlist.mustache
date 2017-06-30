@@ -1,0 +1,127 @@
+&lt;div id=&quot;theme-wrapper&quot;&gt;
+    {{&gt; organisms-header-alt}}
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;container playlist&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div id=&quot;content-wrapper&quot;&gt;
+
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-md-12&quot;&gt;
+                        &lt;div class=&quot;row&quot;&gt;
+
+                            &lt;div class=&quot;main-box clearfix&quot;&gt;
+                                &lt;header class=&quot;main-box-header clearfix&quot;&gt;
+
+                                    {{&gt; organisms-candidates-header }}
+                                &lt;/header&gt;
+
+                                    &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                        {{&gt; organisms-table-shortlist-list }}
+                                    &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                {{&gt; organisms-footer }}
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--&lt;div class=&quot;playlist-feedback-mobile&quot;&gt;
+        &lt;div class=&quot;row text-center&quot;&gt;
+            &lt;form class=&quot;form-inline giant&quot;&gt;
+                &lt;button type=&quot;submit&quot; class=&quot;btn btn-danger&quot; onclick=&quot;window.location='{{ link.pages-jsj-jobs-journey2 }}';&quot;&gt;&lt;span class=&quot;fa fa-thumbs-down&quot;&gt; Not Me&lt;/span&gt;&lt;/button&gt;
+                &lt;button type=&quot;submit&quot; class=&quot;btn btn-success&quot; onclick=&quot;window.location='{{ link.pages-j-posting }}';&quot;&gt;&lt;span class=&quot;fa fa-thumbs-up&quot;&gt; Me&lt;/span&gt;&lt;/button&gt;
+                &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot; onclick=&quot;window.location='{{ link.pages-jsj-intro-journey2 }}';&quot;&gt;&lt;span class=&quot;fa fa-forward&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;--&gt;
+&lt;/div&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;add-to-shortlist-modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;div class=&quot;modal-header&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;Add to Shortlist&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-body&quot;&gt;
+                &lt;form&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;Name or Email:&lt;/label&gt;
+                        &lt;input id=&quot;search&quot; class=&quot;form-control&quot; placeholder=&quot;Name or Email&quot; type=&quot;text&quot; &gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-footer&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+                &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot; onclick=&quot;window.location='{{ link.pages-e-candidates-shortlist }}';&quot;&gt;Add&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;new-shortlist-modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;div class=&quot;modal-header&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;New Shortlist&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-body&quot;&gt;
+                &lt;form&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;Title&lt;/label&gt;
+                        &lt;input id=&quot;search&quot; class=&quot;form-control&quot; type=&quot;text&quot; &gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-footer&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+                &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot; onclick=&quot;window.location='{{ link.pages-e-candidates-shortlist }}';&quot;&gt;Add&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;employerFavoriteStudentModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;div class=&quot;modal-header&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;Favorite Student&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-body&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-lg-12&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;div class=&quot;form-group&quot;&gt;
+                            &lt;label&gt;For a particular job:&lt;/label&gt;
+                            &lt;select style=&quot;width:100%;&quot;&gt;
+                                &lt;option value=&quot;&quot;&gt;&lt;/option&gt;
+                                &lt;option value=&quot;&quot;&gt;Environment, Health and Safety Manager&lt;/option&gt;
+                                &lt;option value=&quot;&quot;&gt;Environment Protection Specialist&lt;/option&gt;
+                                &lt;option value=&quot;&quot;&gt;Environmental Health Specialist&lt;/option&gt;
+                                &lt;option value=&quot;&quot;&gt;Environmental Health and Safety Delivery Specialist&lt;/option&gt;
+                                &lt;option value=&quot;&quot;&gt;Environmental Health and Safety Engineer&lt;/option&gt;
+                                &lt;option value=&quot;&quot;&gt;Environmental Health and Safety Manager&lt;/option&gt;
+                                &lt;option value=&quot;&quot;&gt;Environmental Protection Specialist&lt;/option&gt;
+                                &lt;option value=&quot;&quot;&gt;Environmental Quality Analyst&lt;/option&gt;
+                                &lt;option value=&quot;&quot;&gt;Environmental Scientist&lt;/option&gt;
+                            &lt;/select&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-footer&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Cancel&lt;/button&gt;
+                &lt;!--&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Save Draft&lt;/button&gt;--&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; onclick=&quot;window.location='{{ link.pages-e-student-profile }}';&quot;&gt;Favorite&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
